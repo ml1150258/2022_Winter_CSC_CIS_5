@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on January 3, 2022, 11:20 AM
+ * Created on January 4, 2022, 11:20 AM
  * Purpose:  Hmwk 1
  *           Calculating how much paint for a fence
  */
