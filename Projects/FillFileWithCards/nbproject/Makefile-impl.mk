@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=RomanNumeralConversion_Incomplete
+PROJECTNAME=FillFileWithCards
 
 # Active Configuration
 DEFAULTCONF=Debug

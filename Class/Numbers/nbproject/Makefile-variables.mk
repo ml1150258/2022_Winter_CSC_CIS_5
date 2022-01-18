@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=romannumeralconversion_incomplete
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/romannumeralconversion_incomplete
+CND_ARTIFACT_NAME_Debug=numbers
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/numbers
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Debug=romannumeralconversionincomplete.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/romannumeralconversionincomplete.tar
+CND_PACKAGE_NAME_Debug=numbers.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/numbers.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=romannumeralconversion_incomplete
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/romannumeralconversion_incomplete
+CND_ARTIFACT_NAME_Release=numbers
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/numbers
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Release=romannumeralconversionincomplete.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/romannumeralconversionincomplete.tar
+CND_PACKAGE_NAME_Release=numbers.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/numbers.tar
 #
 # include compiler specific variables
 #
