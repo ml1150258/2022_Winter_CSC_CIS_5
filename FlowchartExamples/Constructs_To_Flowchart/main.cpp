@@ -53,13 +53,13 @@ int main(int argc, char** argv) {
     
     //Looping Construct for-loop, note: i variable scope is inside for loop
     int floop=5;
-    for(int i=0;i<=floop;i++){
+    for(int i=1;i<=floop;i++){
         cout<<i<<" ";
     }
     cout<<endl;
     
     //Looping Construct do-while-loop, note: i variable scope outside of loop
-    int dloop=5,i=0;
+    int dloop=5,i=1;
     do{
         cout<<i<<" ";
         ++i;
@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
     
     //Looping Construct while-loop, note: j variable used can't re-declare
     //a loop counter named i because i is already in scope from do-while
-    int wloop=5,j=0;
+    int wloop=5,j=1;
     while(j<=wloop){
         cout<<j<<" ";
         ++j;

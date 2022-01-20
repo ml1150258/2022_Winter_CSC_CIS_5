@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     
     //Initialize variables here
     fact1=0;
-    n=5000;
+    n=10000;
     //while(n<=0||n>12){
     //    cout<<"The current input is <=0 or >12"<<endl
     //            <<" Please input a number between 1 and 12"<<endl;
