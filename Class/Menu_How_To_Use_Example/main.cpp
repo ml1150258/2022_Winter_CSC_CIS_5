@@ -22,6 +22,7 @@ using namespace std;  //STD Name-space where Library is compiled
 void prob0();
 void prob1();
 void prob2();
+void prob3();
 
 //Code Begins Execution Here with function main
 int main(int argc, char** argv) {
@@ -39,6 +40,7 @@ int main(int argc, char** argv) {
         cout<<"Problem 0 - Monty Hall Problem - Savitch 9thEd Chap3 Prob9"<<endl;
         cout<<"Problem 1 - Square Problem  - Gaddis 9thEd Chap5 Prob22"<<endl;
         cout<<"Problem 2 - Random Search - Gaddis 9thEd Chap5 Prob20"<<endl;
+        cout<<"Problem 3 - Average Score - Gaddis 9thEd Chap6 Prob11"<<endl;
         cout<<"Etc......"<<endl;
         cout<<"10 or greater, all negatives to exit"<<endl;
         cout<<endl;
@@ -49,7 +51,7 @@ int main(int argc, char** argv) {
             case 0:prob0();break;
             case 1:prob1();break;
             case 2:prob2();break;
-            case 3:cout<<"Place Problem 3 here"<<endl;break;
+            case 3:prob3();break;
             case 4:cout<<"Place Problem 4 here"<<endl;break;
             case 5:cout<<"Place Problem 5 here"<<endl;break;
             case 6:cout<<"Place Problem 6 here"<<endl;break;
@@ -167,4 +169,91 @@ void prob2(){
     cout<<"The value to find = "<<value<<endl;
     cout<<"The number of guesses = "<<counter<<endl;
     cout<<"The final user guess = "<<usrGuess<<endl;
+}
+
+int  fndLwst(int s1,int s2,int s3,int s4,int s5){
+    int lowest=s1;
+    if(s2<lowest)lowest=s2;
+    if(s3<lowest)lowest=s3;
+    if(s4<lowest)lowest=s4;
+    if(s5<lowest)lowest=s5;
+    return lowest;
+}
+
+float calcAvg(int s1,int s2,int s3,int s4,int s5){
+    return (s1+s2+s3+s4+s5-fndLwst(s1,s2,s3,s4,s5))/4.0f;
+}
+
+void getScr(int &s1,int &s2,int &s3,int &s4,int &s5){
+    //Prompt for Inputs
+    cout<<"This program calculates the average score"<<endl;
+    cout<<"Type in 5 integers >= 0 and <= 100"<<endl;
+    cout<<"The original scores before inputing values are"<<endl;
+    cout<<"Score 1 = "<<s1<<endl;
+    cout<<"Score 2 = "<<s2<<endl;
+    cout<<"Score 3 = "<<s3<<endl;
+    cout<<"Score 4 = "<<s4<<endl;
+    cout<<"Score 5 = "<<s5<<endl;   
+    cout<<"Type each in individually"<<endl;
+    
+    //Input a Value
+    do{
+        cout<<"Input a valid score"<<endl;
+        cin>>s1;
+        cout<<"You entered "<<s1<<endl;
+        if(s1<0||s1>100)cout<<"This is invalid"<<endl;
+    }while(s1<0||s1>100);
+    
+    //Input a Value
+    do{
+        cout<<"Input a valid score"<<endl;
+        cin>>s2;
+        cout<<"You entered "<<s2<<endl;
+        if(s2<0||s2>100)cout<<"This is invalid"<<endl;
+    }while(s2<0||s2>100);
+    
+    //Input a Value
+    do{
+        cout<<"Input a valid score"<<endl;
+        cin>>s3;
+        cout<<"You entered "<<s3<<endl;
+        if(s3<0||s3>100)cout<<"This is invalid"<<endl;
+    }while(s3<0||s3>100);
+    
+    //Input a Value
+    do{
+        cout<<"Input a valid score"<<endl;
+        cin>>s4;
+        cout<<"You entered "<<s4<<endl;
+        if(s4<0||s4>100)cout<<"This is invalid"<<endl;
+    }while(s4<0||s4>100);
+    
+    //Input a Value
+    do{
+        cout<<"Input a valid score"<<endl;
+        cin>>s5;
+        cout<<"You entered "<<s5<<endl;
+        if(s5<0||s5>100)cout<<"This is invalid"<<endl;
+    }while(s5<0||s5>100);
+}
+
+void prob3(){
+    //Declare Variables
+    int score1,score2,score3,score4,score5;
+    
+    //Initialize Variables
+    score1=score2=score3=score4=score5=0;
+    getScr(score1,score2,score3,score4,score5);
+    
+    //Map the inputs/known to the outputs
+    
+    //Display the outputs
+    cout<<"These are the 5 test scores"<<endl;
+    cout<<"Score 1 = "<<score1<<endl;
+    cout<<"Score 2 = "<<score2<<endl;
+    cout<<"Score 3 = "<<score3<<endl;
+    cout<<"Score 4 = "<<score4<<endl;
+    cout<<"Score 5 = "<<score5<<endl;
+    cout<<"The average of the 4 highest scores = "
+        <<calcAvg(score1,score2,score3,score4,score5)<<endl;
 }
