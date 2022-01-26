@@ -27,7 +27,7 @@ float save4(float,float,int);//Using Recursive Function
 void  save5(float &,float,int);//Pass by Reference
 void  save6(float &,float,int=9);//Defaulted Parameter
 float save1(float,float,float);//Using Overloaded Function Name
-int   save7(float &,float,int=9);//Defaulted Parameter
+int   save7(float &,float,int=9);//Static Variable
 
 //Execution begins here!
 int main(int argc, char** argv) {
