@@ -48,7 +48,6 @@ int main(int argc, char** argv) {
     
     //Deallocate dynamic memory
     delete []array;
-    array=nullptr;
 
     //Exit the program
     return 0;
